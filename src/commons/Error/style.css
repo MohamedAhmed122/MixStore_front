@@ -1,0 +1,21 @@
+.error {
+  width: "100%";
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.error_img {
+  width: 40%;
+}
+.error_bold {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 20px;
+}
+.error_message {
+  color: red;
+  text-align: center;
+}

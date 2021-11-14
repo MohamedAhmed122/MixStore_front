@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./commons/Button";
+import Input from "./commons/Input";
+import Loading from "./commons/Loading";
+
+import Error from "./commons/Error";
+import "./App.css";
+import Navigation from "./navigation";
+import { COLORS } from "./styles/colors";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button text='Go Next' color={COLORS.primary} width={200} />
+      <Input placeholder='My input' type='email' Icon={() =><div> I love yo </div>} />
+      <Loading visible={true} />
     </div>
+    // <Navigation />
   );
 }
 
