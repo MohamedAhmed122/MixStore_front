@@ -9,3 +9,15 @@
   outline: none;
   border: 1px solid black;
 }
+
+.dis {
+  color: gray;
+  height: 40px;
+  width: 280px;
+  border-radius: 23px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Dancing Script", cursive;
+  outline: none;
+  border: 1px solid gray;
+}

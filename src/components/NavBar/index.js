@@ -17,15 +17,12 @@ export default function NavBar() {
         <ul className="ul">
           <li className="li">
             <Link className="link" to="/">
-              {" "}
-              Home Page{" "}
+              Home Page
             </Link>
             <Link className="link" to="/logIn">
-              {" "}
-              Log In{" "}
+              Log In
             </Link>
             <Link className="link" to="/register">
-              {" "}
               Register
             </Link>
             <Link className="link" to="/cart">

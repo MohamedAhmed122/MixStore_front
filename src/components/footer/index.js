@@ -10,8 +10,7 @@ import "./style.css";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="footer_line"></div>
-
+      <div className="footer_line"/>
       <div className="footer_sides">
         <div className="lift_side_footer">
           <ul className="ul">
@@ -28,9 +27,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
         <img alt="logoImage" src={Image} className="medal_footer" />
-
         <div className="right_side_footer">
           <ul className="ul">
             <li className="li">

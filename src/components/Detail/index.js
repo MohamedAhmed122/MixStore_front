@@ -4,7 +4,8 @@ import Button from "../../commons/Button";
 import React from "react";
 import "./style.css";
 
-export default function DetailPage({ item: product }) {
+export default function Detail({ item: product }) {
+  console.log(product)
   return (
     <div className="Page_desc_height">
       <div className="card_item_desc">
@@ -23,15 +24,11 @@ export default function DetailPage({ item: product }) {
 
         <h3 className="desc_item_desc"> {product.desc} </h3>
         <div className="btn_item_desc">
-          <Button
-            className=""
-            text="add to cart"
-            color="#CCEDE4"
-            marginTop={"40px"}
-          />
+          <Button text="add to cart" color="#CCEDE4" />
         </div>
       </div>
       <img className="img_item_desc" src={product.image} alt="imageItem" />
+      {/* <h1>{product.name}</h1> */}
     </div>
   );
 }

@@ -52,6 +52,7 @@
   margin-top: 25px;
   font-size: 30px;
   font-weight: 400;
+  width: 400px;
 }
 
 .btn_item_desc {
@@ -60,4 +61,7 @@
 
 .fav_icon_desc {
   color: #ccede4 !important ;
+}
+.button_plus {
+  margin-top: 400px;
 }
