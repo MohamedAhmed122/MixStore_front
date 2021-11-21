@@ -1,0 +1,63 @@
+.Page_desc_height {
+  height: 110vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+
+.card_item_desc {
+  font-family: "Dancing Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img_item_desc {
+  height: 500px;
+  width: 500px;
+  border-radius: 25px !important ;
+  object-fit: cover;
+  margin-left: 100px;
+  box-shadow: rgba(0, 0, 0, 0.288) 0px 4px 12px;
+}
+
+.name_likes_part_item_desc {
+  display: flex;
+  justify-content: space-between !important ;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.likes_item_desc {
+  margin-left: 200px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like_icon_desc {
+  color: black !important;
+}
+
+.icon_item_like_desc {
+  margin-left: 100px !important;
+}
+
+.desc_item_desc {
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.btn_item_desc {
+  margin-top: 25px !important ;
+}
+
+.fav_icon_desc {
+  color: #ccede4 !important ;
+}

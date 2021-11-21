@@ -1,0 +1,71 @@
+.nav_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-family: "Dancing Script", cursive;
+   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.171) 0px 4px 12px;
+  position: fixed;
+  z-index: 200px;
+  top: 0;
+  /* overflow: hidden; */
+}
+
+.left_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 580px;
+}
+
+.logo_image_nav {
+  height: 50px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.logo_name_nav {
+  font-size: 35px;
+  font-family: "Dancing Script", cursive;
+}
+
+.ul {
+  list-style-type: none;
+}
+
+.li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  color: #000;
+  padding: 10px;
+}
+
+.stack_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  font-size: 25px !important;
+  font-weight: 400 !important;
+  background-color: transparent !important;
+  color: #000 !important;
+  font-family: "Dancing Script", cursive !important;
+}
+
+/* 
+font-family: 'Montagu Slab', serif;
+font-family: 'Praise', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto Condensed', sans-serif; */

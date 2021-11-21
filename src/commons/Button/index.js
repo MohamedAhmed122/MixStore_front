@@ -1,19 +1,34 @@
 import React from "react";
 import { COLORS } from "../../styles/colors";
-import "./styles.css";
+import "./style.css";
 
 export default function Button({
   text,
-  color = COLORS.primary,
   onClick,
-  width,
+  color = COLORS.primary,
   height,
+  width,
+  marginTop,
+  margin,
+  marginLeft,
+  marginRight,
+  marginBottom,
 }) {
   return (
     <button
       onClick={onClick}
-      className="main_button"
-      style={{ backgroundColor: color, width, height }}
+      text={text}
+      className="main-button"
+      style={{
+        backgroundColor: color,
+        width,
+        height,
+        marginTop,
+        margin,
+        marginLeft,
+        marginRight,
+        marginBottom,
+      }}
     >
       {text}
     </button>

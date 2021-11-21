@@ -1,0 +1,7 @@
+.loader_compo {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin-top: 160px !important;
+}

@@ -2,22 +2,36 @@ import React from "react";
 import "./style.css";
 
 export default function Input({
-  placeholder,
-  type,
-  onChange,
-  value,
-  width,
   height,
+  width,
+  placeholder,
+  onChange,
+  type,
+  value,
   Icon,
+  backgroundColor: color,
+  border,
+  borderRadius,
+  margin,
 }) {
   return (
-    <div className="input_container" style={{ width, height }}>
+    <div
+      className="input_container"
+      style={{
+        backgroundColor: color,
+        height,
+        width,
+        border,
+        borderRadius,
+        margin,
+      }}
+    >
       {Icon && <Icon />}
       <input
-        placeholder={placeholder}
-        type={type}
-        onChange={onChange}
         value={value}
+        placeholder={placeholder}
+        onChange={onChange}
+        type={type}
         className="input"
       />
     </div>

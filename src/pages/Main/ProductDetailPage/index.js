@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { fetchProduct } from "../../../api/requests/products";
 import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
+import DetailPage from "../../../components/DetailPage";
 
 export function ProductDetailPage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -22,10 +23,10 @@ export function ProductDetailPage() {
 
   if (isLoading) return <Loading visible={isLoading} />;
   if (error) return <Error />;
+
   return (
     <div>
-      <h1>ProductDetailPage: {id} </h1>
-      <p>{product.name}</p>
+      <DetailPage item={product} />
     </div>
   );
 }

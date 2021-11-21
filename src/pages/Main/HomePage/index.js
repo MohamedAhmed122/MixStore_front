@@ -12,7 +12,7 @@ export function HomePage() {
   const [error, setError] = useState(null);
 
   const history = useHistory();
-  const handleNavigate = (id) => history.push(`/products/detail/${id}`)
+  const handleNavigate = (id) => history.push(`/products/detail/${id}`);
 
   useEffect(() => {
     setIsLoading(true);
@@ -32,7 +32,11 @@ export function HomePage() {
   return (
     <div className="home_page">
       {products.map((product) => (
-        <Card key={product._id} item={product} handleNavigate={handleNavigate}/>
+        <Card
+          key={product._id}
+          item={product}
+          handleNavigate={handleNavigate}
+        />
       ))}
     </div>
   );

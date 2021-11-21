@@ -1,13 +1,20 @@
 .input_container {
-  background-color: lightgray;
-  border-radius: 15px;
-  width: 150px;
   padding: 10px;
+  width: 400px;
+  border-radius: 19px;
+  background-color: #fff !important;
   display: flex;
 }
 
 .input {
   background-color: transparent;
-  width: 100%;
-  height: 100%;
+  color: black;
+  width: 60%;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+}
+
+.input ::placeholder {
+  color: black !important;
 }
