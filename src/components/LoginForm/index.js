@@ -8,7 +8,7 @@ import "./style.css";
 
 const LoginForm = ({ handleLoginSubmit }) => {
   return (
-    <div className="full_screen">
+    <div className="full_page">
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}

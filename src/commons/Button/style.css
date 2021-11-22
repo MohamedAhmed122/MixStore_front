@@ -8,7 +8,10 @@
   font-family: "Dancing Script", cursive;
   outline: none;
   border: 1px solid black;
+  cursor: pointer;
 }
+
+
 
 .dis {
   color: gray;
@@ -20,4 +23,5 @@
   font-family: "Dancing Script", cursive;
   outline: none;
   border: 1px solid gray;
+  cursor: pointer;
 }

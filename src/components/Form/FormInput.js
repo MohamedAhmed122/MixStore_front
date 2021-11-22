@@ -3,7 +3,7 @@ import { useField } from "formik";
 import { FormControl } from "@mui/material";
 import Input from "../../commons/Input";
 
-export const FormInput = ({ width, Icon, margin, children, ...props }) => {
+export const FormInput = ({ width, Icon, margin,  ...props }) => {
   const [field, meta] = useField(props);
   return (
     <FormControl error={meta.touched && !!meta.error}>

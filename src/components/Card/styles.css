@@ -2,9 +2,11 @@
   height: 320px;
   width: 330px;
   border-radius: 10px;
+  font-family: "Dancing Script", cursive;
   background-color: rgb(236, 236, 236);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin: 20px;
+  cursor: pointer;
 }
 
 .card_product_img {
@@ -16,16 +18,17 @@
 
 .card_product_desc {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0px 10px;
   align-items: center;
   margin-top: 15px;
 }
 
 .card_product_name {
-  color: #52cc57;
+  margin-right: 80px;
+  color: #000;
 }
 
 .card_product_price {
-  color: #ffd130;
+  color: #000;
 }
