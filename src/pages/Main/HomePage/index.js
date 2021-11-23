@@ -4,6 +4,7 @@ import { fetchProducts } from "../../../api/requests/products";
 import Error from "../../../commons/Error";
 import Loading from "../../../commons/Loading";
 import Card from "../../../components/Card";
+import HomeSwiper from "../../../components/Swiper";
 import "./style.css";
 
 export function HomePage() {
