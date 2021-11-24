@@ -10,15 +10,14 @@ export default function NavBar() {
   return (
     <div className="nav_bar">
       <div className="left_side">
-        <img className="logo_image_nav" src={Image} alt="logo_image" />
+        <Link className="link_Logo" to="/">
+          <img className="logo_image_nav" src={Image} alt="logo_image" />
+        </Link>
         <h1 className="logo_name_nav"> Mix Store </h1>
       </div>
       <div className="right_side">
         <ul className="ul_nav_par_page">
           <li className="li_nav_par_page">
-            <Link className="link" to="/">
-              Home Page
-            </Link>
             <Link className="link" to="/logIn">
               Log In
             </Link>

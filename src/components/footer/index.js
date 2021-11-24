@@ -1,22 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../../assets/logo_2.png";
-import Avatar from "@mui/material/Avatar";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import "./style.css";
 
 export default function Footer() {
   return (
     <div className="footer_for_pages">
-      <div className="footer_line" />
+      <div className="footer_line"></div>
+
       <div className="footer_sides">
         <div className="lift_side_footer">
           <ul className="ul_footer_page">
             <li className="li_footer_page">
-              <Link className="link_footer" to="/">
-                HomePage
-              </Link>
               <Link className="link_footer" to="/logIn">
                 Log In
               </Link>
@@ -26,20 +21,18 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <img alt="logoImage" src={Image} className="medal_footer" />
+        <Link className="link_Logo_footer" to="/">
+          <img alt="logoImage" src={Image} className="medal_footer" />
+        </Link>
+
         <div className="right_side_footer">
           <ul className="ul_footer_page">
             <li className="li_footer_page">
-              <Link className="link_footer" to="/AdminCreateProduct">
+              <Link className="link_footer" to="/AdminCreateNew">
                 Create Products
               </Link>
-              <Link className="link_footer" to="MyOrderPage">
+              <Link className="link_footer" to="/AddressPage">
                 Make Order
-              </Link>
-              <Link to="">
-                <Avatar className="footer_avatar">
-                  <WhatsAppIcon />
-                </Avatar>
               </Link>
             </li>
           </ul>

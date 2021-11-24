@@ -1,11 +1,9 @@
 import React from "react";
-import { COLORS } from "../../styles/colors";
 import "./style.css";
 
 export default function Button({
   text,
   disabled,
-  color = COLORS.primary,
   height,
   width,
   margin,
@@ -14,12 +12,11 @@ export default function Button({
   return (
     <button
       text={text}
-      className={ disabled ? 'dis':  "main-button"}
+      className={ + disabled ? "disabled_button" : "main-button"}
       style={{
-        backgroundColor:disabled ?  COLORS.gray :color,
         width,
-        margin,
         height,
+        margin,
       }}
       {...props}
     >

@@ -1,0 +1,10 @@
+.swiper_slider {
+  height: 430px;
+  width: 100%;
+}
+
+.img_swiper_page {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
