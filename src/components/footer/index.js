@@ -28,10 +28,10 @@ export default function Footer() {
         <div className="right_side_footer">
           <ul className="ul_footer_page">
             <li className="li_footer_page">
-              <Link className="link_footer" to="/AdminCreateNew">
+              <Link className="link_footer" to="/AdminCreateProduct">
                 Create Products
               </Link>
-              <Link className="link_footer" to="/AddressPage">
+              <Link className="link_footer" to="/MyOrderPage">
                 Make Order
               </Link>
             </li>

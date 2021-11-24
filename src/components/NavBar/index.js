@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Image from "../../assets/logo_2.png";
 import Avatar from "@mui/material/Avatar";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { Icon } from "../../FolderIcon";
 import "./style.css";
 
 export default function NavBar() {
@@ -25,14 +24,10 @@ export default function NavBar() {
               Register
             </Link>
             <Link className="link" to="/cart">
-              <Avatar className="avatar">
-                <AddShoppingCartIcon />
-              </Avatar>
+              <Avatar className="avatar">{Icon.AddShoppingCartIcon}</Avatar>
             </Link>
             <Link className="link" to="/favorite">
-              <Avatar className="avatar">
-                <FavoriteBorderIcon />
-              </Avatar>
+              <Avatar className="avatar">{Icon.FavoriteBorderIcon}</Avatar>
             </Link>
           </li>
         </ul>

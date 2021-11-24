@@ -1,11 +1,7 @@
 import React from "react";
 import { Formik, Form } from "formik";
 import { validationAddAddressUserSchema as validationSchema } from "../../utils/validationSchema";
-import EmailIcon from "@mui/icons-material/Email";
-import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
-import LocationCityIcon from "@mui/icons-material/LocationCity";
-import HomeIcon from "@mui/icons-material/Home";
-import DialpadIcon from "@mui/icons-material/Dialpad";
+import { Icon } from "../../FolderIcon";
 import { FormInput } from "../Form/FormInput";
 import Button from "../../commons/Button";
 import "./style.css";
@@ -29,27 +25,27 @@ const MakeOrder = ({ handleMakeOrderSubmit }) => {
             <FormInput
               name="email"
               placeholder="Email"
-              Icon={() => <EmailIcon />}
+              Icon={() => Icon.EmailIcon}
             />
             <FormInput
               name="phoneNumber"
               placeholder="Phone Number"
-              Icon={() => <PhoneIphoneIcon />}
+              Icon={() => Icon.PhoneIphoneIcon}
             />
             <FormInput
               name="city"
               placeholder="City"
-              Icon={() => <LocationCityIcon />}
+              Icon={() => Icon.LocationCityIcon}
             />
             <FormInput
               name="address"
               placeholder="Address"
-              Icon={() => <HomeIcon />}
+              Icon={() => Icon.HomeIcon}
             />
             <FormInput
               name="zipCode"
               placeholder="Zip Code"
-              Icon={() => <DialpadIcon />}
+              Icon={() => Icon.DialpadIcon}
             />
             <Button
               text="Order"

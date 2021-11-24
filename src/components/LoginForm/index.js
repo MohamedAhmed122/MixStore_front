@@ -3,7 +3,7 @@ import { Formik, Form } from "formik";
 import { validationLoginSchema as validationSchema } from "../../utils/validationSchema";
 import { FormInput } from "../Form/FormInput";
 import Button from "../../commons/Button";
-import EmailIcon from '@mui/icons-material/Email';
+import { Icon } from "../../FolderIcon";
 import "./style.css";
 
 const LoginForm = ({ handleLoginSubmit }) => {
@@ -16,8 +16,16 @@ const LoginForm = ({ handleLoginSubmit }) => {
       >
         {({ isSubmitting, isValid, dirty }) => (
           <Form className="Form">
-            <FormInput name="email" placeholder="Email" Icon={() =><EmailIcon /> } />
-            <FormInput name="password" placeholder="Password" />
+            <FormInput
+              name="email"
+              placeholder="Email"
+              Icon={() => Icon.EmailIcon}
+            />
+            <FormInput
+              name="password"
+              placeholder="Password"
+              Icon={() => Icon.VisibilityIcon}
+            />
             <Button
               text="Login"
               type="submit"

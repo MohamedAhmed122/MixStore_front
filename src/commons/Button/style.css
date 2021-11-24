@@ -24,7 +24,7 @@
   font-weight: 400;
   border: 1px solid #000;
   transition: 1s ease-out !important;
-  background-color: transparent !important;
+  background-color: #f2c2d7 !important;
 }
 
 .disabled_button {

@@ -2,7 +2,6 @@ import React from "react";
 import Button from "../../commons/Button";
 import { Checkbox } from "@mui/material";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
-import { COLORS } from "../../styles/colors";
 import "./style.css";
 
 export default function Detail({ item: product }) {
@@ -25,11 +24,10 @@ export default function Detail({ item: product }) {
 
         <h3 className="desc_item_desc"> {product.desc} </h3>
         <div className="btn_item_desc">
-          <Button text="add to cart" color={COLORS.gray} />
+          <Button text="Add To Cart" type="submit" margin={20} />
         </div>
       </div>
       <img className="img_item_desc" src={product.image} alt="imageItem" />
-      {/* <h1>{product.name}</h1> */}
     </div>
   );
 }
