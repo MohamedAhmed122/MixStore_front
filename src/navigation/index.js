@@ -8,6 +8,8 @@ import { ProductDetailPage } from "../pages/Main/ProductDetailPage";
 import { RegisterPage } from "../pages/Main/RegisterPage";
 import SandBox1 from "../sandbox/SandBox1";
 import { AdminCreateProduct } from "../pages/Admin/CreateNewProduct";
+import { MyOrderPage } from "../pages/Main/MyOrderPage";
+
 export default function Navigation() {
   return (
     <Switch>
@@ -19,6 +21,7 @@ export default function Navigation() {
       <Route path="/favorite" exact component={FavoritePage} />
       <Route path="/sandbox2" exact component={SandBox1} />
       <Route path="/AdminCreateProduct" exact component={AdminCreateProduct} />
+      <Route path="/MyOrderPage" exact component={MyOrderPage} />
     </Switch>
   );
 }

@@ -14,8 +14,8 @@ export default function NavBar() {
         <h1 className="logo_name_nav"> Mix Store </h1>
       </div>
       <div className="right_side">
-        <ul className="ul">
-          <li className="li">
+        <ul className="ul_nav_par_page">
+          <li className="li_nav_par_page">
             <Link className="link" to="/">
               Home Page
             </Link>

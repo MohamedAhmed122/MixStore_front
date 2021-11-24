@@ -3,7 +3,7 @@ export const COLORS = {
 
   primary: "#52CC57",
 
-  blue: "#18B5D9",
+  blue: "#B6EAFB",
 
   danger: "#FF685C",
 

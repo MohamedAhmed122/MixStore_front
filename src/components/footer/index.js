@@ -33,10 +33,8 @@ export default function Footer() {
               <Link className="link_footer" to="/AdminCreateProduct">
                 Create Products
               </Link>
-              <Link to="">
-                <Avatar className="footer_avatar">
-                  <InstagramIcon />
-                </Avatar>
+              <Link className="link_footer" to="MyOrderPage">
+                Make Order
               </Link>
               <Link to="">
                 <Avatar className="footer_avatar">

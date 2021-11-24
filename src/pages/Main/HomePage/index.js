@@ -32,6 +32,7 @@ export function HomePage() {
 
   return (
     <div className="home_page">
+      <HomeSwiper />
       {products.map((product) => (
         <Card
           key={product._id}

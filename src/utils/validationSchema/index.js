@@ -18,8 +18,16 @@ export const validationRegisterSchema = Yup.object().shape({
 
 export const validationCreateProductsSchema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
-  desc: Yup.string().required().label("Desc"),
+  desc: Yup.string().required().label("Description"),
   price: Yup.string().required().label("Price"),
   image: Yup.string().required().label("Image"),
-  cal: Yup.string().required().label("Cal"),
+  cal: Yup.string().required().label("Calories"),
+});
+
+export const validationAddAddressUserSchema = Yup.object().shape({
+  email: Yup.string().required().email().label("Email"),
+  phoneNumber: Yup.string().required().max(11).label("Phone Number"),
+  address: Yup.string().required().label("Address"),
+  city: Yup.string().required().label("City"),
+  zipCode: Yup.string().required().max(6).label("Zip Code"),
 });
