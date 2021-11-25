@@ -3,10 +3,9 @@ import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import "./style.css";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
-
+import Button  from "../../commons/Button";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
-
 
 const SwiperHome = () => {
   return (
@@ -25,67 +24,30 @@ const SwiperHome = () => {
         className="mySwiper"
       >
         <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://food-fanatic-res.cloudinary.com/iu/s--uzDDmSC6--/c_thumb,f_auto,g_auto,h_3086,q_auto,w_3086/v1486327268/chocolate-strawberry-milkshakes-photo"
-            alt="img"
-          />{" "}
+          <div
+            className="swiper_page_bg"
+            style={{
+              backgroundImage: `url("https://i.pinimg.com/736x/23/19/98/231998fa0a3cba4c1d9cabc4e587f4ef.jpg")`,
+            }}
+          >
+            <div>
+              <h1>Hello to May Website</h1>
+              <Button text="See More"></Button>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://live.staticflickr.com/65535/48962119157_79048a6f1b_b.jpg"
-            alt="img"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://aseasyasapplepie.com/wp-content/uploads/2017/01/avocado-strawberry-layered-smoothie-500x500.jpg"
-            alt="img"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://www.alphafoodie.com/wp-content/uploads/2020/11/Orange-Ginger-Juice-1-of-1.jpeg"
-            alt="img"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://www.yourhomebasedmom.com/wp-content/uploads/2021/08/CHOCOLATE-MILK-SHAKE-5520-500x500.jpg"
-            alt="img"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2013%2F12%2F06%2F201305-xl-horchata-milk-shake-2000.jpg&q=85"
-            alt="img"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://dirtylittlesecret.co.nz/wp-content/uploads/2021/05/kinder-bueno-small-500x400.jpg"
-            alt="img"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://thetravelbite.com/wp-content/uploads/2021/06/Mint-Lemonade-TheTravelBite.com-16-scaled-720x720.jpg"
-            alt="img"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper_slider">
-          <img
-            className="img_swiper_page"
-            src="https://californiaavocado.com/wp-content/uploads/2020/08/Avocado-Milkshake-3-1.jpg"
-            alt="img"
-          />
+          <div
+            className="swiper_page_bg"
+            style={{
+              backgroundImage: `url("https://media.istockphoto.com/photos/orange-juice-splash-picture-id537837754?k=20&m=537837754&s=612x612&w=0&h=D69GxC3Mlw--eqvtIk7kBTjC6tqG-dWdcvRl5Aoq49w=")`,
+            }}
+          >
+            <div>
+              <h1>Hello to May Website</h1>
+              <Button text="See More"/>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>

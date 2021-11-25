@@ -5,7 +5,7 @@ import { FormInput } from "../Form/FormInput";
 import { Icon } from "../../FolderIcon";
 import Button from "../../commons/Button";
 
-const RegisterForm = ({ handleRegisterSubmit }) => {
+const RegisterForm = ({ handleRegisterSubmit, loading }) => {
   return (
     <div className="full_page">
       <Formik
@@ -53,6 +53,7 @@ const RegisterForm = ({ handleRegisterSubmit }) => {
               type="submit"
               disabled={!dirty || !isValid}
               margin={30}
+              loading={loading}
             />
           </Form>
         )}

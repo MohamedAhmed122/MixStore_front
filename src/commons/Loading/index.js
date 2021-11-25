@@ -1,18 +1,17 @@
 import React from "react";
-import Loader from "react-loader-spinner";
+import ReactLoading from "react-loading";
+
 import { COLORS } from "../../styles/colors";
 import "./style.css";
 
-export default function Loading({ color=COLORS.blue, visible }) {
-  return (
-    <div className="loader_compo">
-      <Loader
-        type="Circles"
-        color={color}
-        height={200}
-        width={200}
-        visible={visible}
-      />
-    </div>
-  );
+export default function Loading({ color = COLORS.blue, visible }) {
+  if (visible) {
+    return (
+      <div className="loader_compo">
+        <ReactLoading type="spokes" color={color} height={200} width={200} />
+      </div>
+    );
+  } else {
+    return null;
+  }
 }

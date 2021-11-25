@@ -1,10 +1,22 @@
 .swiper_slider {
   height: 430px;
   width: 100%;
+  overflow: hidden;
 }
 
 .img_swiper_page {
   height: 100%;
   width: 100%;
   object-fit: contain;
+}
+
+.swiper_page_bg {
+  height: 500px;
+  width: 1000px;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
 }

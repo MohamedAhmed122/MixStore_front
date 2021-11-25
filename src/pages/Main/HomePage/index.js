@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { fetchProducts } from "../../../api/requests/products";
-import Error from "../../../commons/Error";
-import Loading from "../../../commons/Loading";
-import Card from "../../../components/Card";
 import SwiperHome from "../../../components/Swiper";
+import CardContainer from "./CardContainer";
 import "./style.css";
+
+// VS -----------------------------GET-----------------------------------------
+// 1-Component is Ready - useEffect
+// 2-display Loading Component in the middle of the screen , because we don't have data to display
+//  3- display Error Component in the middle of the screen , because we don't have data to display
 
 export function HomePage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -27,19 +30,15 @@ export function HomePage() {
       .finally(() => setIsLoading(false));
   }, []);
 
-  if (isLoading) return <Loading />;
-  if (error) return <Error />;
-
   return (
     <div className="home_page">
       <SwiperHome />
-      {products.map((product) => (
-        <Card
-          key={product._id}
-          item={product}
-          handleNavigate={handleNavigate}
-        />
-      ))}
+      <CardContainer
+        handleNavigate={handleNavigate}
+        isLoading={isLoading}
+        error={error}
+        products={products}
+      />
     </div>
   );
 }
