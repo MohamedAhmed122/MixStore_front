@@ -1,6 +1,6 @@
 .main-button {
   color: #000 !important;
-  background-color: #95bce9 !important;
+  background-color: #fca212 !important;
   height: 40px;
   width: 280px;
   border-radius: 23px;
@@ -28,21 +28,20 @@
   font-weight: 400;
   border: 1px solid #000;
   transition: 1s ease-out !important;
-  background-color: #f2c2d7 !important;
+  background-color: #a86800 !important;
 }
 
 .disabled_button {
   color: rgba(0, 0, 0, 0.411) !important ;
-  background-color: #d4b2d3;
+  background-color: #fca212;
   height: 40px;
   width: 280px;
   border-radius: 23px;
   font-size: 15px;
   font-weight: 400;
-  font-weight: bolder;
   font-family: "Playfair Display", serif;
   outline: none;
-  border: 1px solid #d4b2d3;
+  border: 1px solid #000000;
   cursor: pointer;
   display: flex;
   align-items: center;

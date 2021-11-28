@@ -1,9 +1,17 @@
 .home_page {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 1200px;
   margin: auto;
   justify-content: center;
   margin-top: 100px;
+}
+
+.cardContainer_homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }

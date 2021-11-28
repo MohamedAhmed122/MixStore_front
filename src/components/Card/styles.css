@@ -1,28 +1,29 @@
 .card_home_page {
-  height: 340px;
+  height: 310px;
   width: 300px;
-  border-radius: 30px 0px 30px 0px;
+  border-radius: 20px 20px 20px 20px;
   font-family: "Playfair Display", serif;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.13) 0px 4px 12px;
+  box-shadow: #fca2123d 0px 4px 12px;
+
   margin: 20px;
   cursor: pointer;
 }
 .card_home_page:hover {
-  height: 340px;
+  height: 310px;
   width: 300px;
-  border-radius: 30px 0px 30px 0px;
+  border-radius: 20px 20px 20px 20px;
   font-family: "Playfair Display", serif;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.548) 0px 4px 12px;
+  box-shadow: #fca21281 0px 4px 12px;
   margin: 20px;
   cursor: pointer;
 }
 
 .img_item_home_page {
-  height: 250px !important;
+  height: 230px !important;
   width: 300px !important;
-  border-radius: 30px 0px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
@@ -37,7 +38,7 @@
 
 .item_name_home_page {
   font-size: 17px;
-  color: #000000;
+  color: #ffff;
 
   font-family: "Playfair Display", serif;
 }
@@ -46,6 +47,5 @@
   font-size: 16px;
   font-family: "Playfair Display", serif;
   margin-left: 20px;
-  color: #000000;
+  color: #fca212;
 }
-

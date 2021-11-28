@@ -6,7 +6,7 @@
 }
 
 .footer_line {
-  border: 0.5px solid rgb(26, 24, 24);
+  border: 0.2px solid #fca212;
   margin-top: 20px;
 }
 
@@ -15,26 +15,20 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin-left: 90px;
+  margin-left: 60px;
 }
 
 .medal_footer {
-  height: 80px;
-  width: 100px;
-  object-fit: contain;
-  
-}
-
-.medal_footer {
-  height: 50px;
+  height: 70px;
   width: 80px;
   object-fit: contain;
   margin-top: 5px;
 }
 
 .copy_text {
-  margin-left: 42%;
+  margin-left: 41.5%;
   margin-top: 15px;
+  color: #fca212;
 }
 
 .ul_footer_page {
@@ -50,19 +44,19 @@
 .link_footer {
   text-decoration: none;
   margin: 10px;
-  color: black;
+  color: #fca212;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
 }
 
 .link_footer:hover {
-  border-bottom: 1px solid #589cd4;
   text-decoration: none;
+  margin: 10px;
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
-  color: #589cd4;
+  color: #ffffff;
   padding: 4px;
 }
 

@@ -4,11 +4,13 @@ import { validationRegisterSchema as validationSchema } from "../../utils/valida
 import { FormInput } from "../Form/FormInput";
 import { Icon } from "../../FolderIcon";
 import Button from "../../commons/Button";
+import "./style.css";
 
 const RegisterForm = ({ handleRegisterSubmit, loading }) => {
   return (
-    <div className="full_page">
+    <div className="full_page_register">
       <Formik
+        className="formik_register"
         initialValues={{
           firstName: "",
           lastName: "",
@@ -58,6 +60,13 @@ const RegisterForm = ({ handleRegisterSubmit, loading }) => {
           </Form>
         )}
       </Formik>
+      <div>
+        <img
+          className="register_img"
+          src="https://media.istockphoto.com/photos/glass-of-orange-juice-and-fresh-oranges-picture-id152971676?k=20&m=152971676&s=170667a&w=0&h=0nM8FfESPSG_vJstZ2M_OnTrYSaTD0HCIGSOe07vzow="
+          alt="orangeJuice"
+        />
+      </div>
     </div>
   );
 };

@@ -5,15 +5,15 @@
   text-align: center;
   height: 65px;
   width: 100%;
-  color: rgb(0, 0, 0);
-  background-color: #fff !important;
+  color: #fca212;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
+  /* background: linear-gradient(
     50deg,
     rgba(238, 174, 202, 0.753) 40%,
     rgba(148, 188, 233, 0.836) 35%,
     rgba(148, 188, 233, 0.836) 100%
-  );
+  ); */
+  background-color: #000;
 
   position: absolute;
   top: 0;
@@ -28,8 +28,8 @@
 }
 
 .logo_image_nav {
-  height: 50px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   object-fit: contain;
 }
 
@@ -52,7 +52,7 @@
   text-decoration: none;
   font-size: 24px;
   font-weight: 400;
-  color: #000;
+  color: #fca212;
   padding: 9px;
 }
 
@@ -66,7 +66,7 @@
   font-size: 25px !important;
   font-weight: 400 !important;
   background-color: transparent !important;
-  color: #000 !important;
+  color: #fca212 !important;
   font-family: "Dancing Script", cursive !important;
 }
 

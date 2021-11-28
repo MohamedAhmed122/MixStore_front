@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Image from "../../assets/logo_2.png";
+import Image from "../../assets/logo_3.png";
 import Avatar from "@mui/material/Avatar";
 import { Icon } from "../../FolderIcon";
 import "./style.css";

@@ -13,10 +13,11 @@ export function RegisterPage() {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-//-------------------------------POST--DELETE--PUT-----------------------------------
-// 1- OnClick  OR Handle 
-// 2-  Loading & DISABLED button 
-// 3-  error & try again
+  //-------------------------------POST--DELETE--PUT-----------------------------------
+  // 1- OnClick  OR Handle
+  // 2-  Loading & DISABLED button
+  // 3-  error & try again
+
   const handleRegisterSubmit = (values) => {
     const { firstName, lastName, email, password } = values;
     const body = {
@@ -24,6 +25,7 @@ export function RegisterPage() {
       email,
       password,
     };
+
     setLoading(true);
     registerUser(body)
       .then((res) => {

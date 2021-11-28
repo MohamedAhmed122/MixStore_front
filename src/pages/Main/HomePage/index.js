@@ -33,12 +33,14 @@ export function HomePage() {
   return (
     <div className="home_page">
       <SwiperHome />
-      <CardContainer
-        handleNavigate={handleNavigate}
-        isLoading={isLoading}
-        error={error}
-        products={products}
-      />
+      <div className="cardContainer_homePage">
+        <CardContainer
+          handleNavigate={handleNavigate}
+          isLoading={isLoading}
+          error={error}
+          products={products}
+        />
+      </div>
     </div>
   );
 }
