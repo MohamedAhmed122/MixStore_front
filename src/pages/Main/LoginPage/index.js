@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { logInrUser } from "../../../api/requests/Users";
+import { loginUser } from "../../../api/requests/users";
 import { toast } from "react-toastify";
 import { errorHandlers } from "../../../utils/errorHandlers";
 import { useHistory } from "react-router";
@@ -19,7 +19,7 @@ export function LoginPage() {
     };
 
     setLoading(true);
-    logInrUser(body)
+    loginUser(body)
       .then((res) => {
         setUser(res);
         toast.success("Welcome To Mix Store ");
