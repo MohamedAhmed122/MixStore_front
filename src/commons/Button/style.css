@@ -1,5 +1,5 @@
 .main-button {
-  color: #000 !important;
+  color: #fff !important;
   background-color: #fca212 !important;
   height: 40px;
   width: 280px;
@@ -18,7 +18,7 @@
 }
 
 .main-button:hover {
-  color: #000 !important;
+  color: #ffff !important;
   outline: none;
   text-decoration: none;
   font-family: "Playfair Display", serif;
@@ -32,7 +32,7 @@
 }
 
 .disabled_button {
-  color: rgba(0, 0, 0, 0.411) !important ;
+  color: #ffff !important ;
   background-color: #fca212;
   height: 40px;
   width: 280px;
@@ -50,7 +50,7 @@
 }
 
 .common-button {
-  color: #000 !important;
+  color: #fff !important;
   height: 40px;
   width: 280px;
   border-radius: 23px;

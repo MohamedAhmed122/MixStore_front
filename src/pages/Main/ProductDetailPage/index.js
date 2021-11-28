@@ -5,11 +5,13 @@ import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
 import Detail from "../../../components/Detail";
 
+
 export function ProductDetailPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [product, setProduct] = useState({});
   const [error, setError] = useState(null);
   const { id } = useParams();
+
 
   useEffect(() => {
     if (id) {

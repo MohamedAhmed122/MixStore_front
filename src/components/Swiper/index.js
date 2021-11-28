@@ -4,6 +4,7 @@ import "swiper/swiper.min.css";
 import "./style.css";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import Button from "../../commons/Button";
+import { styleSwiper } from "./style";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -22,11 +23,7 @@ const SwiperHome = () => {
         }}
         navigation={true}
         className="mySwiper"
-        style={{
-          width: 900,
-          boxShadow: "#fca21281 0px 4px 12px",
-          borderRadius: 20,
-        }}
+        style={styleSwiper}
       >
         <SwiperSlide
           style={{
@@ -37,7 +34,7 @@ const SwiperHome = () => {
         >
           <div className="btn_text_swiper">
             <h1>Hello to May Website</h1>
-            <Button text="See More"></Button>
+            <Button text="See More"/>
           </div>
         </SwiperSlide>
 
