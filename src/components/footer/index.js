@@ -5,7 +5,7 @@ import "./style.css";
 
 export default function Footer() {
   return (
-    <div class >
+    <div className="full_page">
       <div className="footer_for_pages">
         <div className="footer_line"></div>
 
