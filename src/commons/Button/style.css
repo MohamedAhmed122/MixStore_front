@@ -1,24 +1,10 @@
 .main-button {
-  color: #000 !important;
   background-color: #fca212 !important;
-  height: 40px;
-  width: 280px;
-  border-radius: 23px;
-  outline: none;
   text-decoration: none;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 400;
-  font-family: "Playfair Display", serif;
-  border: 1px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .main-button:hover {
-  color: #000 !important;
+  color: #ffff !important;
   outline: none;
   text-decoration: none;
   font-family: "Playfair Display", serif;
@@ -32,32 +18,21 @@
 }
 
 .disabled_button {
-  color: rgba(0, 0, 0, 0.411) !important ;
-  background-color: #fca212;
+  background-color: #fca212a6 !important;
+}
+
+.common-button {
+  color: #fff !important;
   height: 40px;
   width: 280px;
   border-radius: 23px;
   font-size: 15px;
+  outline: none;
   font-weight: 400;
+  text-decoration: none;
+  border: 1px solid #000;
   font-family: "Playfair Display", serif;
-  outline: none;
-  border: 1px solid #000000;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.common-button {
-  color: #000 !important;
-  height: 40px;
-  width: 280px;
-  border-radius: 23px;
-  font-size: 20px;
-  font-weight: bolder;
-  font-family: "Dancing Script", cursive;
-  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../../../assets/pngwing.png";
-import { Icon } from "../../../FolderIcon";
+import { Icon } from "../../../assets/FolderIcon";
 import "./style.css";
 
 export function CartPage() {

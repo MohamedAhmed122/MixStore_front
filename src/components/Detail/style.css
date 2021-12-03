@@ -33,6 +33,7 @@
   justify-content: space-between !important ;
   align-items: center;
   margin-top: 30px;
+  color: #ffff;
 }
 
 .likes_item_desc {
@@ -40,10 +41,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffff;
 }
 
 .like_icon_desc {
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .icon_item_like_desc {
@@ -51,12 +53,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffff;
 }
 
 .desc_item_desc {
   margin-top: 25px;
   font-size: 23px;
   font-weight: 400;
+  color: #ffff;
 }
 
 .btn_item_desc {
@@ -64,5 +68,5 @@
 }
 
 .fav_icon_desc {
-  color: #ccede4 !important ;
+  color: #e7862b !important ;
 }

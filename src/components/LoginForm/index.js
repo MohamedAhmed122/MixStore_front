@@ -3,7 +3,7 @@ import { Formik, Form } from "formik";
 import { validationLoginSchema as validationSchema } from "../../utils/validationSchema";
 import { FormInput } from "../Form/FormInput";
 import Button from "../../commons/Button";
-import { Icon } from "../../FolderIcon";
+import { Icon } from "../../assets/FolderIcon";
 import "./style.css";
 
 const LoginForm = ({ handleLoginSubmit }) => {

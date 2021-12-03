@@ -11,7 +11,7 @@ import "./index.css";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-    <ToastContainer
+      <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -22,9 +22,8 @@ ReactDOM.render(
         draggable
         theme="colored"
         pauseOnHover
-     />
+      />
       <App />
- 
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")

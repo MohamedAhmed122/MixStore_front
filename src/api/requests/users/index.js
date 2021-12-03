@@ -6,7 +6,10 @@ export const registerUser = async (values) => {
   return data;
 };
 
-export const loginUser = async (values) => {
-  const { data } = await axios.post(`${endpoints.users} ${endpoints.login}`);
+export const logInUser = async (values) => {
+  const { data } = await axios.post(
+    `${endpoints.users}/${endpoints.login}`,
+    values
+  );
   return data;
 };

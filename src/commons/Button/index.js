@@ -14,7 +14,11 @@ export default function Button({
   return (
     <button
       text={text}
-      className={disabled ? "disabled_button" : "main-button"}
+      className={
+        disabled
+          ? "disabled_button  common-button"
+          : "main-button  common-button"
+      }
       disabled={loading || disabled}
       style={{
         width,

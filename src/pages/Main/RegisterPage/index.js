@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+// REDUX
+import { useDispatch } from "react-redux";
+import { registerUserAuth } from "../../../redux/auth/action";
+//  REQ
 import { registerUser } from "../../../api/requests/users";
-import RegisterForm from "../../../components/RegisterForm";
-
-import { toast } from "react-toastify";
-
-import "./style.css";
+// HOOKS
+import { useNavigateAuthenticatedUser } from "../../../hooks/useNavigateAuthenticatedUser";
+// UTILS
 import { errorHandlers } from "../../../utils/errorHandlers";
-import { useHistory } from "react-router";
+// RENDER && STYLES
+import RegisterForm from "../../../components/RegisterForm";
+import "./style.css";
 
 export function RegisterPage() {
-  const [user, setUser] = useState({});
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
+  const dispatch = useDispatch();
 
-  //-------------------------------POST--DELETE--PUT-----------------------------------
-  // 1- OnClick  OR Handle
-  // 2-  Loading & DISABLED button
-  // 3-  error & try again
+  useNavigateAuthenticatedUser();
 
   const handleRegisterSubmit = (values) => {
     const { firstName, lastName, email, password } = values;
@@ -25,22 +25,12 @@ export function RegisterPage() {
       email,
       password,
     };
-
     setLoading(true);
     registerUser(body)
-      .then((res) => {
-        setUser(res);
-        toast.success("Welcome, in Juicy Store");
-      })
+      .then((res) => dispatch(registerUserAuth(res)))
       .catch((error) => errorHandlers(error))
       .finally(() => setLoading(false));
   };
-
-  useEffect(() => {
-    if (user.name) {
-      history.push("/");
-    }
-  }, [user, history]);
 
   return (
     <RegisterForm
