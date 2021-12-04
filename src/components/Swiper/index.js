@@ -4,10 +4,11 @@ import "swiper/swiper.min.css";
 import "./style.css";
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import Button from "../../commons/Button";
-import { swiperID } from "../../assets/SwiperImage";
+import { swiperItems } from "../../assets/SwiperImage";
 import { styleSwiper } from "./styleSwiperImg";
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
+// TODO: CheckSwiper 
 
 const SwiperHome = () => {
   return (
@@ -26,8 +27,9 @@ const SwiperHome = () => {
         className="mySwiper"
         style={styleSwiper}
       >
-        {swiperID.map((swiper) => (
+        {swiperItems.map((swiper) => (
           <SwiperSlide
+          key={swiper.id}
             style={{ opacity: 0.75, backgroundImage: `url(${swiper.image})` }}
             className="swiper_slider swiper_page_bg"
           >
@@ -42,3 +44,8 @@ const SwiperHome = () => {
   );
 };
 export default SwiperHome;
+
+
+// export const SwiperDetail = () =>{
+//   return()
+// }

@@ -20,8 +20,9 @@ export default function Navigation() {
       <Route path="/cart" exact component={CartPage} />
       <Route path="/favorite" exact component={FavoritePage} />
       <Route path="/sandbox2" exact component={SandBox1} />
-      <Route path="/AdminCreateProduct" exact component={AdminCreateProduct} />
       <Route path="/MyOrderPage" exact component={MyOrderPage} />
+      {/* admin */}
+      <Route path="/Admin/CreateProduct" exact component={AdminCreateProduct} />
     </Switch>
   );
 }

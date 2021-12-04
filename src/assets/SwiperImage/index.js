@@ -1,4 +1,4 @@
-export const swiperID = [
+export const swiperItems = [
   {
     key: 1,
     id: 1,

@@ -22,10 +22,10 @@ const CreateAdminProducts = ({ handleCreateProductsSubmit }) => {
         {({ dirty, isValid }) => (
           <Form className="form_product_admin_page">
             <FormInput name="name" placeholder="Name" />
-            <FormInput name="desc" placeholder="Desc" />
+            <FormInput name="desc" placeholder="Description" />
             <FormInput name="price" placeholder="Price" />
             <FormInput name="image" placeholder="Image" />
-            <FormInput name="cal" placeholder="Cal" />
+            <FormInput name="cal" placeholder="Calories" />
             <Button
               text="Create"
               type="submit"

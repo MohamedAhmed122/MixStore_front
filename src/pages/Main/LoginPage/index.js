@@ -1,41 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 // REDUX
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { loginUserAuth } from "../../../redux/auth/action";
 // HOOKS
 import { useNavigateAuthenticatedUser } from "../../../hooks/useNavigateAuthenticatedUser";
-// REQ
-import { logInUser } from "../../../api/requests/users";
-// UTILS
-import { errorHandlers } from "../../../utils/errorHandlers";
 // RENDER && Style
 import LoginForm from "../../../components/LoginForm";
 import "./style.css";
 
 export function LoginPage () {
-  const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
+  const {loading} = useSelector(state=> state.auth)
   
   useNavigateAuthenticatedUser();
 
   const handleLoginSubmit = (values) => {
     const { email, password } = values;
-    const body = { email, password };
-
-    authUser(body);
+    const body = { email, password};
+    dispatch(loginUserAuth(body))
   };
 
-  const authUser = async (body) => {
-    setLoading(true);
-    try {
-      const userValues = await logInUser(body);
-      await dispatch(loginUserAuth(userValues));
-    } catch (error) {
-      errorHandlers(error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  
 
   return <LoginForm handleLoginSubmit={handleLoginSubmit} loading={loading} />;
 }

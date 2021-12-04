@@ -1,19 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 // REDUX
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { registerUserAuth } from "../../../redux/auth/action";
-//  REQ
-import { registerUser } from "../../../api/requests/users";
 // HOOKS
 import { useNavigateAuthenticatedUser } from "../../../hooks/useNavigateAuthenticatedUser";
-// UTILS
-import { errorHandlers } from "../../../utils/errorHandlers";
-// RENDER && STYLES
 import RegisterForm from "../../../components/RegisterForm";
 import "./style.css";
 
 export function RegisterPage() {
-  const [loading, setLoading] = useState(false);
+
+  const {loading} = useSelector(state => state.auth);
   const dispatch = useDispatch();
 
   useNavigateAuthenticatedUser();
@@ -25,11 +21,7 @@ export function RegisterPage() {
       email,
       password,
     };
-    setLoading(true);
-    registerUser(body)
-      .then((res) => dispatch(registerUserAuth(res)))
-      .catch((error) => errorHandlers(error))
-      .finally(() => setLoading(false));
+   dispatch(registerUserAuth(body))
   };
 
   return (

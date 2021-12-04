@@ -1,10 +1,17 @@
 import React from "react";
-import CreateAdminProducts from "../../../components/CreateAdminProducts"; 
+import { adminCreateProduct } from "../../../api/requests/products";
+import CreateAdminProducts from "../../../components/CreateAdminProducts";
 import "./style.css";
 
-export  function AdminCreateProduct() {
+export function AdminCreateProduct() {
   const handleCreateProductsSubmit = (values) => {
-    console.log(values);
+    const body = {
+      ...values,
+      ingredients: ["Milk", "banana"],
+    };
+    adminCreateProduct(body)
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
   };
   return (
     <CreateAdminProducts

@@ -21,7 +21,7 @@ export const validationCreateProductsSchema = Yup.object().shape({
   desc: Yup.string().required().label("Description"),
   price: Yup.number().required().label("Price"),
   image: Yup.string().required().label("Image"),
-  cal: Yup.number().required().max(5).label("Calories"),
+  cal: Yup.number().required().max(1000).label("Calories"),
 });
 
 export const validationAddAddressUserSchema = Yup.object().shape({
