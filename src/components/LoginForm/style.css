@@ -1,3 +1,15 @@
-.Login_page {
-  height: 100vh;
+.full_page_register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.register_img {
+  height: 430px;
+  width: 300px;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-left: 100px;
 }

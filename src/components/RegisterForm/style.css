@@ -6,8 +6,9 @@
 }
 
 .register_img {
-  height: 430px;
+  height: 43 0px;
   width: 300px;
+  object-fit: contain;
   border-radius: 20px;
   margin-top: 100px;
   margin-left: 100px;

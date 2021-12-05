@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/footer";
 
 import "react-toastify/dist/ReactToastify.css";
-import { useToastContainer } from "react-toastify";
+// import { useToastContainer } from "react-toastify";
 
 // Redux-thunk
 // Redux-presist

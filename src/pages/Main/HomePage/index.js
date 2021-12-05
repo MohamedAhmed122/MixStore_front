@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import { fetchProducts } from "../../../api/requests/products";
-import {axios} from '../../../api/axios'
+// import {axios} from '../../../api/axios'
 import SwiperHome from "../../../components/Swiper";
 import CardContainer from "./CardContainer";
 import "./style.css";
@@ -20,7 +20,7 @@ export function HomePage() {
   
   // axios.defaults.headers.Authorization = `Bearer ${user?.token}`;
 
-  console.log(user?.token, 'user?.token')
+  // console.log(user?.token, 'user?.token')
 
 
   const history = useHistory();
