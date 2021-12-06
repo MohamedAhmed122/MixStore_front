@@ -30,118 +30,11 @@
   width: 55%;
   margin-left: 5%;
   margin-top: 30px;
-}
-
-.text_bag_cart_page {
-  color: #000000;
   font-family: "Playfair Display", serif;
-}
-
-.products_cards_cart_page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.product_card_cart_page {
-  margin-left: 15px;
-}
-
-.img_product_card_cart_page {
-  height: 170px;
-  width: 190px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.text_name_product_cart {
-  color: #000000;
-  font-family: "Playfair Display", serif;
-  font-size: 400;
 }
 
 .right_side_cart {
   width: 35%;
   margin-right: 5%;
-  margin-top: 150px;
-}
-
-.cards_detail_cart {
-  height: 600px;
-  width: 450px;
-}
-
-.card_shipping_cart {
-  height: 170px;
-  width: 80%;
-  margin-left: 10%;
-  color: #fca212 !important;
-  border-radius: 18px;
-  background-color: #000000;
-  font-family: "Playfair Display", serif;
-}
-
-.card_pay_cart {
-  height: 120px;
-  width: 80%;
-  margin-left: 10%;
   margin-top: 10px;
-  color: #fca212;
-  border-radius: 18px;
-  background-color: #000000;
-  font-family: "Playfair Display", serif;
-}
-
-.card_total_cart {
-  height: 150px;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 10px;
-  color: #000000;
-  border-radius: 18px;
-  border: 2px solid #000000;
-  font-family: "Playfair Display", serif;
-}
-
-.card_text_shipping_margin {
-  margin-top: 5px !important;
-}
-
-.text_card_shipping {
-  color: #fca212;
-  margin-left: 10px;
-  font-size: 18px;
-}
-
-.icon_text_shipping {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-left: 5px;
-}
-
-.name_card_shipping {
-  margin-left: 5px;
-  font-size: 13px !important;
-}
-
-.pay_card_text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  margin-left: 10%;
-}
-
-.pay_card_text_total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  margin-left: 10%;
-  font-weight: 700;
-  font-size: 20px;
 }

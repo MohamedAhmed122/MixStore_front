@@ -16,7 +16,7 @@ export function LoginPage () {
 
   const handleLoginSubmit = (values) => {
     const { email, password } = values;
-    const body = { email, password};
+    const body = { email, password };
     dispatch(loginUserAuth(body))
   };
 

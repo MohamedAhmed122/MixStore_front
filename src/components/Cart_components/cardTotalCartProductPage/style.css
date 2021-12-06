@@ -1,0 +1,19 @@
+.pay_card_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.pay_card_text_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  font-weight: 700;
+  font-size: 20px;
+}

@@ -34,7 +34,7 @@ const SwiperHome = () => {
             className="swiper_slider swiper_page_bg"
           >
             <div className="btn_text_swiper">
-              <h1>Hello to May Website</h1>
+              <h1>Hello to My Website</h1>
               <Button text="See More" />
             </div>
           </SwiperSlide>

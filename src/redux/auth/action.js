@@ -5,12 +5,14 @@ import { endpoints } from "../../api/requests/endpoints";
 
 const loginUserAuth = (values) => async (dispatch) => {
   dispatch({ type: types.USER_LOGIN_REQUEST });
+  
   try {
     const { data } = await axios.post(
       `${endpoints.users}/${endpoints.login}`,
       values
     );
     dispatch({ type: types.USER_LOGIN_SUCCESS, payload: data });
+
   } catch (error) {
     dispatch({ type: types.USER_LOGIN_ERROR, payload: error });
     errorHandlers(error);

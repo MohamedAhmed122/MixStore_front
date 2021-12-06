@@ -22,7 +22,9 @@ export default function Footer() {
             <ul className="ul_footer_page">
               <li className="li_footer_page">
                 {isAuthenticated ? (
-                  <div onClick={handleLogout} style={{color:'white'}}>Logout </div>
+                  <div onClick={handleLogout} className="link_footer_logout">
+                    Logout
+                  </div>
                 ) : (
                   <>
                     <Link className="link_footer" to="/logIn">

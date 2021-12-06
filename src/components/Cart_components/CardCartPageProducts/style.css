@@ -1,0 +1,23 @@
+.products_cards_cart_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product_card_cart_page {
+  margin-left: 15px;
+}
+
+.img_product_card_cart_page {
+  height: 170px;
+  width: 190px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.text_name_product_cart {
+  color: #000000;
+  font-family: "Playfair Display", serif !important;
+  font-size: 400;
+}

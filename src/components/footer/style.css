@@ -25,7 +25,8 @@
 }
 
 .copy_text {
-  margin-left: 42.7%;
+  align-items: center;
+  text-align: center;
   margin-top: 10px;
   color: #fca212;
 }
@@ -43,6 +44,16 @@
 .link_footer {
   text-decoration: none;
   margin: 10px;
+  color: #fca212;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.link_footer_logout {
+  text-decoration: none;
+  margin: 10px;
+  margin-left: 65px;
   color: #fca212;
   font-family: "Playfair Display", serif;
   font-size: 20px;

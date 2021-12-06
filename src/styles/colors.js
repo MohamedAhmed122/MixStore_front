@@ -1,5 +1,7 @@
 export const COLORS = {
   secondary: "#FFD130",
+  
+  gold: "#fca212",
 
   primary: "#52CC57",
 
