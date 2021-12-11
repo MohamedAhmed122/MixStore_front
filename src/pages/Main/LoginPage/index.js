@@ -8,19 +8,17 @@ import { useNavigateAuthenticatedUser } from "../../../hooks/useNavigateAuthenti
 import LoginForm from "../../../components/LoginForm";
 import "./style.css";
 
-export function LoginPage () {
+export function LoginPage() {
   const dispatch = useDispatch();
-  const {loading} = useSelector(state=> state.auth)
-  
+  const { loading } = useSelector((state) => state.auth);
+
   useNavigateAuthenticatedUser();
 
   const handleLoginSubmit = (values) => {
     const { email, password } = values;
     const body = { email, password };
-    dispatch(loginUserAuth(body))
+    dispatch(loginUserAuth(body));
   };
-
-  
 
   return <LoginForm handleLoginSubmit={handleLoginSubmit} loading={loading} />;
 }

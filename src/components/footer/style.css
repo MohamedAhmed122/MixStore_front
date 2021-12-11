@@ -58,6 +58,7 @@
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .link_footer:hover {

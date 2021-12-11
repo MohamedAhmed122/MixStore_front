@@ -13,7 +13,7 @@ export default function CardContainer({
   if (error) return <Error />;
   return (
     <>
-      {products.map((product) => (
+      {products?.map((product) => (
         <Card
           key={product._id}
           item={product}

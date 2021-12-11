@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router";
-import { fetchProducts } from "../../../api/requests/products";
+import { fetchProducts } from "../../../redux/products/action";
 // import {axios} from '../../../api/axios'
 import SwiperHome from "../../../components/Swiper";
 import CardContainer from "./CardContainer";
 import "./style.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 // VS -----------------------------GET-----------------------------------------
 // 1-Component is Ready - useEffect
@@ -13,31 +13,19 @@ import { useSelector } from "react-redux";
 //  3- display Error Component in the middle of the screen , because we don't have data to display
 
 export function HomePage() {
-  const {user} = useSelector(state => state.auth)
-  const [isLoading, setIsLoading] = useState(false);
-  const [products, setProducts] = useState([]);
-  const [error, setError] = useState(null);
-  
+  const { user } = useSelector((state) => state.auth);
+  const { products, isLoading, error } = useSelector((state) => state.products);
+  const dispatch = useDispatch();
   // axios.defaults.headers.Authorization = `Bearer ${user?.token}`;
 
   // console.log(user?.token, 'user?.token')
-
 
   const history = useHistory();
   const handleNavigate = (id) => history.push(`/products/detail/${id}`);
 
   useEffect(() => {
-    setIsLoading(true);
-    fetchProducts()
-      .then((res) => {
-        setProducts(res.products);
-        console.log(res)
-      })
-      .catch((err) => {
-        setError(err);
-      })
-      .finally(() => setIsLoading(false));
-  }, []);
+    dispatch(fetchProducts());
+  }, [dispatch]);
 
   return (
     <div className="home_page">

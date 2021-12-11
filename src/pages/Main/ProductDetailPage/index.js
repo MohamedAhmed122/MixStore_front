@@ -1,30 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router";
-import { fetchProduct } from "../../../api/requests/products";
+
+import { useSelector, useDispatch } from "react-redux";
+import { fetchProductsDetail } from "../../../redux/productDetail/action";
+
 import Loading from "../../../commons/Loading";
 import Error from "../../../commons/Error";
 import Detail from "../../../components/Detail";
 
-
 export function ProductDetailPage() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [product, setProduct] = useState({});
-  const [error, setError] = useState(null);
+  const { isLoading, error, products } = useSelector(
+    (state) => state.productsDetail
+  );
+
+  console.log(isLoading, "loading");
+  console.log(error, "error");
+  console.log(products, "products");
+
+  const dispatch = useDispatch();
   const { id } = useParams();
 
+  console.log(id);
 
   useEffect(() => {
-    if (id) {
-      setIsLoading(true);
-      fetchProduct(id)
-        .then((res) => setProduct(res))
-        .catch((err) => setError(err))
-        .finally(() => setIsLoading(false));
-    }
-  }, [id]);
-
+    dispatch(fetchProductsDetail(id));
+  }, [dispatch, id]);
 
   if (isLoading) return <Loading visible={isLoading} />;
   if (error) return <Error />;
-  return <Detail item={product} />;
+  return <Detail item={products} />;
 }
