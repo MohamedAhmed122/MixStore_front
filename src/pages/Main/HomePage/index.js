@@ -21,11 +21,14 @@ export function HomePage() {
   // console.log(user?.token, 'user?.token')
 
   const history = useHistory();
-  const handleNavigate = (id) => history.push(`/products/detail/${id}`);
+
 
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
+
+  const handleNavigate = (id) => history.push(`/products/detail/${id}`);
+
 
   return (
     <div className="home_page">

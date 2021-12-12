@@ -1,4 +1,4 @@
-export const productsType = {
+export const types = {
   PRODUCTS_REQUEST: "PRODUCTS_REQUEST",
   PRODUCTS_SUCCESS: "PRODUCTS_SUCCESS",
   PRODUCTS_ERROR: "PRODUCTS_ERROR",

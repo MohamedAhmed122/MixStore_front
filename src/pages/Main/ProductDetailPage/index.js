@@ -10,12 +10,8 @@ import Detail from "../../../components/Detail";
 
 export function ProductDetailPage() {
   const { isLoading, error, products } = useSelector(
-    (state) => state.productsDetail
+    (state) => state.productDetail
   );
-
-  console.log(isLoading, "loading");
-  console.log(error, "error");
-  console.log(products, "products");
 
   const dispatch = useDispatch();
   const { id } = useParams();

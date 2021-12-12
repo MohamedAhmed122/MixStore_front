@@ -1,4 +1,4 @@
-import { productsType } from "./type";
+import { types } from "./type";
 
 const initialState = {
   isLoading: false,
@@ -8,18 +8,18 @@ const initialState = {
 
 const productsDetailReducer = (state = initialState, action) => {
   switch (action.type) {
-    case productsType.PRODUCTS_REQUEST:
+    case types.PRODUCTS_REQUEST:
       return {
         ...state,
         isLoading: true,
       };
-    case productsType.PRODUCTS_SUCCESS:
+    case types.PRODUCTS_SUCCESS:
       return {
         isLoading: false,
         products: action.payload.products,
         error: null,
       };
-    case productsType.PRODUCTS_ERROR:
+    case types.PRODUCTS_ERROR:
       return {
         ...state,
         isLoading: false,
