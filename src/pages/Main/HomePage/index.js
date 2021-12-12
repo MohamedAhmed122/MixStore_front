@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router";
 import { fetchProducts } from "../../../redux/products/action";
-// import {axios} from '../../../api/axios'
+import {axios} from '../../../api/axios'
 import SwiperHome from "../../../components/Swiper";
 import CardContainer from "./CardContainer";
 import "./style.css";
@@ -14,14 +14,12 @@ import { useSelector, useDispatch } from "react-redux";
 
 export function HomePage() {
   const { user } = useSelector((state) => state.auth);
+  
+  const history = useHistory();
   const { products, isLoading, error } = useSelector((state) => state.products);
   const dispatch = useDispatch();
-  // axios.defaults.headers.Authorization = `Bearer ${user?.token}`;
-
-  // console.log(user?.token, 'user?.token')
-
-  const history = useHistory();
-
+  
+  axios.defaults.headers.common['Authorization'] =`Bearer ${user?.token}`;
 
   useEffect(() => {
     dispatch(fetchProducts());

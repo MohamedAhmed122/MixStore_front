@@ -2,7 +2,7 @@ import { types } from "./type";
 
 const initialState = {
   isLoading: false,
-  products: null,
+  product: null,
   error: null,
 };
 
@@ -16,7 +16,7 @@ const productsDetailReducer = (state = initialState, action) => {
     case types.PRODUCT_DETAIL_SUCCESS:
       return {
         isLoading: false,
-        products: action.payload,
+        product: action.payload,
         error: null,
       };
     case types.PRODUCT_DETAIL_ERROR:

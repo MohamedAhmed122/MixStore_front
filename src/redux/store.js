@@ -12,4 +12,4 @@ const middleWare = [logger, thunk];
 export const store = createStore(RootReducer, applyMiddleware(...middleWare));
 
 
-export const persistor  = persistStore(store)
+export const persistor  = persistStore(store, {manualPersist: false})
